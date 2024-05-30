@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum</title>
+    <link rel="stylesheet" href="test16css.css">
+</head>
+<body>
+    <main>
+        <div class="top">
+            <h1>Momentum Calculator</h1>
+        </div>
+        <label for="mode">Please select a question type</label>
+        <select name="mode" id="mode">
+            <option value="default" selected>--Select below--</option>
+            <option value="generic">2-object generic</option>
+            <option value="elastic">2-object elastic</option>
+            <option value="inelastic">2-object totally inelastic</option>
+        </select>
+
+        <!-- calculator-->
+        <div id="calc" class="notShown">
+            <div class="top">
+                <h2 id="simName"> </h2>
+                <p id="descriptionP"> </p>
+                <p id="reminderP"> </p>
+            </div>
+            <form action="" id="form">
+                <label for="m1">Mass of object 1 (kg): </label>
+                <input type="text" id="m1">
+                <br>
+                <label for="v1">Initial velocity of object 1 (m/s): </label>
+                <input type="text" id="v1">
+                <br>
+                <div class="notShown" id="v1primediv">
+                    <label for="v1prime">Final velocity of object 1 (m/s): </label>
+                    <input type="text" id="v1prime">
+                </div>
+                <br>
+                <label for="m2">Mass of object 2 (kg): </label>
+                <input type="text" id="m2">
+                <br>
+                <label for="v2">Initial velocity of object 2 (m/s): </label>
+                <input type="text" id="v2">
+                <br>
+                <button>Calculate!</button><button type="button" id="reset">Reset</button>
+            </form>
+    
+            <p id="result"> </p>
+    
+            <div id="explanation" class="notShown">
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox">Show explanation</label>
+            </div>
+            <p id="explanationP" class="notShown"> </p>
+        </div>
+    </main>
+    <script src="momentumjs.js"></script>
+</body>
+</html>
